@@ -14,7 +14,7 @@ first_name = input('What is your first name? ')
 last_name = input('What is your last name? ')
 eye_color = input('What is your eye color? ')
 hair_color = input('What is your hair color? ')
-age = input('What is your age? ')
+age = int(input('What is your age? '))
 
 # Print them back to the user as conversation
 
@@ -22,6 +22,8 @@ age = input('What is your age? ')
 print('Hello ' + first_name.capitalize() + ' ' + last_name.capitalize() + '! Welcome, your age is ' + age + ', your eyes '
     'are '+ eye_color + ' and your hair color is ' + hair_color + '.')
 
-#Section 2 - Calculate in what year was the person born? and responde back.
+#Section 2 - Calculate in what year was the person born? and respond back.
+birthyear = 2019-age
 
 # print something like: 'You said you we're 28 hence you were born in 1991!'
+print("You said you we're"+ ' ' + age + ' hence you were born in ' + birthyear +'!')
