@@ -52,3 +52,13 @@ enemies = ('Mario', 'Sailorman' 'Moon Cake', 'Jerry', 'Berry')
 print(type(enemies))
 
 # if you try to re-assign it will break
+# enemies [0] = 'Goku' error will occur
+
+# example of list for end of the world survival
+kit_list =[]
+item_1 = input('What is your first item to keep? ')
+kit_list.append(item_1)
+item_2 = input('What is your next item to keep? ')
+kit_list.append(item_2)
+item_3 = input('What is your next item to keep? ')
+kit_list.append(item_3)
