@@ -21,11 +21,9 @@ def bizzzzuu_game(number):
     else:
         return number
 
-def zzuu():
-    return
-
-def bizzzzuu():
-    return
+user_input = int(input('Enter a limit number: '))
+for number in range(1,user_input):
+    print(bizzzzuu_game(number))
 # prints back each individual number, but
 
     # if it is a multiple of 3 it returns bizz
