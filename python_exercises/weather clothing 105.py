@@ -11,17 +11,20 @@
 # rainy >> respond with 'Take your umbrella'
 # rainy and stormy >> 'stay home'
 # anything else respond with 'sorry, i didn't quite catch that'
-
-print("These are the weather conditions: 'sunny', 'stormy', 'rainy' and 'rainy and stormy'")
-weather = input('Please enter a weather condition: ')
-
-if weather == 'sunny':
-    print('take your shorts!')
-elif weather == 'stormy':
-    print('take rain coat')
-elif weather == 'rainy':
-    print('take your umbrella')
-elif weather == 'rainy and stormy':
-    print('stay home')
-else:
-    print("sorry, i didn't quite catch that")
+while True:
+    weathertype = ['sunny', 'stormy', 'rainy', 'rainy and stormy',"done"]
+    for climate in weathertype:
+        print(climate)
+        weather =input('Select a weather option from above:')
+    if weather == 'sunny':
+        print('take your shorts!')
+    elif weather == 'stormy':
+        print('take rain coat')
+    elif weather == 'rainy':
+        print('take your umbrella')
+    elif weather == 'rainy and stormy':
+        print('stay home')
+    elif weather == "done":
+        print('Have a nice day')
+    else:
+        print("sorry, i didn't quite catch that")

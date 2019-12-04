@@ -22,4 +22,21 @@ counter = 0
 # infinite loop
 # while True:
 #     print('hello')
+print('To exit press 0')
+while True:
+    # generate a random number
+    num = 14
+    # ask for user input
+    user_guess = int(input('Guess number: '))
+    # evaluate input and respond appropiately
+    # breakpoint()
+    if num == user_guess:
+        print('you guessed it')
+        break
+    elif user_guess > num:
+        print('Too high')
+    elif user_guess == 0:
+        break
+    elif user_guess < num:
+        print('Too low')
 
